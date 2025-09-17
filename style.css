@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SuisseIntl;
+    user-select: none;
+}
+
+html,
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow-x: clip;
+}
+
+
+@font-face {
+    font-family: 'f1';
+    src: url(./fonts/SuisseIntl-Light.ttf);
+}
+
+@font-face {
+    font-family: 'f2';
+    src: url(./fonts/SuisseIntl-Regular.woff2);
+}
+
+.herotxts {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.herotxts .innerdiv {
+    padding: 7vh;
+}
+
+.bottom {
+    margin-top: 42vh;
+    padding-bottom: 20vh;
+}
+
+.page2 {
+    padding: 2vw;
+}
+
+.line {
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.tableLine1 {
+    margin-top: 9vh;
+    margin-bottom: 2vh;
+}
+
+.tableLine2 {
+    margin: 2vh 0 2vh 0;
+}
+
+.learnMore {
+    margin-top: 3vh;
+}
+
+.page3 {
+    padding: 2vw;
+}
+
+.Mainslider {
+    cursor: pointer;
+}
+
+.page3 img {
+    cursor: pointer;
+}
+
+.imageContainer {
+    padding:2vw;
+}
+
+.page4 {
+    padding: 4vw;
+}
+
+.clients li div picture {
+    width: 4vw;
+    height: 6vh;
+}
+
+.headline {
+    margin-bottom: 4vh;
+}
+
+
+.cardWrapper {
+    border-radius: 4px;
+}
+
+.upperwrapper {
+    padding: 1.5vw;
+}
+
+.lowericons {
+    padding: 1.5vw;
+    
+}
+
+@keyframes imageMarque {
+    to {
+        transform: translateX(calc(-100% - 2vw));
+    }
+}
+
+.marques {
+    animation: imageMarque;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.marques:hover{
+    cursor: hand;
+    transition: 0.2s ease;
+    animation-play-state: paused;
+}
+
+
+.page5 {
+    padding: 4vw;
+}
+
+.page5 .videoWrapper {
+    margin-top: 7vh;
+}
+
+.page5 .videoWrapper video {
+    width: 80%;
+}
+
+.last {
+    margin-top: 7vh;
+}
+
+.bussinesMsg {
+    margin-top:9vh;
+    margin-bottom: 4vh;
+}
+
+input {
+    border: none;
+    outline:none;
+}
+
+.right {
+    margin-left: 8vw;
+}
+
+.lower {
+    margin-top: 8vh;
+}
+
+.upper {
+    height: 40%;
+    margin-top: 1vh;
+}
