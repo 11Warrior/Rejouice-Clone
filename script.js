@@ -53,42 +53,57 @@ tl.to(".page2", {
     }
 })
 
+//navbar animation
+const initialText = document.querySelectorAll(".initialtext");
+gsap.to(initialText, {
+    y: "-100%",
+    scrollTrigger: {
+        // markers: true,
+        trigger: ".page1 .video",
+        start: "top 40%",
+        end: "top top",
+        toggleActions: "play none play reverse"
+    }
+})
+
+
+
 //loader animation
 const main = document.querySelector(".main");
 const textDiv = document.querySelectorAll(".texts .innerText");
 const loader = document.querySelector(".loader");
 const tlLoader = gsap.timeline();
 
-tlLoader.to(main, {
-    overflow: "hidden"
-})
-tlLoader.to(textDiv, {
-    opacity: 1,
-    duration: 2,
-    stagger:{
-        amount: 0.1
-    }
-})
-tlLoader.to(textDiv, {
-    opacity: 0,
-    duration: 2,
-    stagger: {
-        amount: -0.3
-    }
-})
+// tlLoader.to(main, {
+//     overflow: "hidden"
+// })
+// tlLoader.to(textDiv, {
+//     opacity: 1,
+//     duration: 2,
+//     stagger:{
+//         amount: 0.1
+//     }
+// })
+// tlLoader.to(textDiv, {
+//     opacity: 0,
+//     duration: 2,
+//     stagger: {
+//         amount: -0.3
+//     }
+// })
 
-tlLoader.to(loader, {
-    transform: "translateY(100%)",
-    duration: 2,
+// tlLoader.to(loader, {
+//     transform: "translateY(100%)",
+//     duration: 2,
 
-})
+// })
 
-tlLoader.to(loader, {
-    display: "none"
-})
-tlLoader.to(main, {
-    overflow: "initial"
-})
+// tlLoader.to(loader, {
+//     display: "none"
+// })
+// tlLoader.to(main, {
+//     overflow: "initial"
+// })
 
 
 //Marque animations

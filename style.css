@@ -14,6 +14,10 @@ body {
     overflow-x: clip;
 }
 
+.navbar {
+    padding: 0 4vw 0 4vw;
+    mix-blend-mode: difference;
+}
 
 @font-face {
     font-family: 'f1';
