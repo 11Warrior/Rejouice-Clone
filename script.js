@@ -73,6 +73,9 @@ const main = document.querySelector(".main");
 const textDiv = document.querySelectorAll(".texts .innerText");
 const loader = document.querySelector(".loader");
 const tlLoader = gsap.timeline();
+const nav = document.querySelector(".navbar");
+
+
 
 tlLoader.to(main, {
     overflow: "hidden"
@@ -92,11 +95,13 @@ tlLoader.to(textDiv, {
     }
 })
 
+
 tlLoader.to(loader, {
     transform: "translateY(100%)",
     duration: 2,
-
+    
 })
+
 
 tlLoader.to(loader, {
     display: "none"
